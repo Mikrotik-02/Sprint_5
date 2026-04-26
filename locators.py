@@ -24,6 +24,21 @@ class MainPageLocators:
     LOGO_LINK = (By.XPATH, "//a[.//*[name()='svg' and @width='290' and @height='50']]")
     CONSTRUCTOR_TITLE = (By.XPATH, "//h1[text()='Соберите бургер']")
     ORDER_BUTTON = (By.XPATH, "//button[text()='Оформить заказ']")
+    BUNS_TAB = (By.XPATH, "//span[text()='Булки']")
+    SAUCES_TAB = (By.XPATH, "//span[text()='Соусы']")
+    FILLINGS_TAB = (By.XPATH, "//span[text()='Начинки']")
+    ACTIVE_BUNS_TAB = (
+        By.XPATH,
+        "//div[contains(@class, 'tab_tab_type_current')][.//span[text()='Булки']]",
+    )
+    ACTIVE_SAUCES_TAB = (
+        By.XPATH,
+        "//div[contains(@class, 'tab_tab_type_current')][.//span[text()='Соусы']]",
+    )
+    ACTIVE_FILLINGS_TAB = (
+        By.XPATH,
+        "//div[contains(@class, 'tab_tab_type_current')][.//span[text()='Начинки']]",
+    )
 
 
 class ForgotPasswordPageLocators:
@@ -38,3 +53,4 @@ class AccountPageLocators:
     )
     CONSTRUCTOR_LINK = (By.XPATH, "//a[.//p[text()='Конструктор']]")
     LOGO_LINK = (By.XPATH, "//a[.//*[name()='svg' and @width='290' and @height='50']]")
+    LOGOUT_BUTTON = (By.XPATH, "//button[text()='Выход']")

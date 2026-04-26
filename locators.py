@@ -20,8 +20,21 @@ class LoginPageLocators:
 class MainPageLocators:
     LOGIN_ACCOUNT_BUTTON = (By.XPATH, "//button[text()='Войти в аккаунт']")
     ACCOUNT_LINK = (By.XPATH, "//a[.//p[text()='Личный Кабинет']]")
+    CONSTRUCTOR_LINK = (By.XPATH, "//a[.//p[text()='Конструктор']]")
+    LOGO_LINK = (By.XPATH, "//a[.//*[name()='svg' and @width='290' and @height='50']]")
+    CONSTRUCTOR_TITLE = (By.XPATH, "//h1[text()='Соберите бургер']")
     ORDER_BUTTON = (By.XPATH, "//button[text()='Оформить заказ']")
 
 
 class ForgotPasswordPageLocators:
     LOGIN_LINK = (By.XPATH, "//a[text()='Войти']")
+
+
+class AccountPageLocators:
+    PROFILE_LINK = (By.XPATH, "//a[text()='Профиль']")
+    PROFILE_DESCRIPTION = (
+        By.XPATH,
+        "//p[text()='В этом разделе вы можете изменить свои персональные данные']",
+    )
+    CONSTRUCTOR_LINK = (By.XPATH, "//a[.//p[text()='Конструктор']]")
+    LOGO_LINK = (By.XPATH, "//a[.//*[name()='svg' and @width='290' and @height='50']]")

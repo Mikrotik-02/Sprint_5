@@ -14,9 +14,10 @@ def driver():
 @pytest.fixture
 def user_data():
     random_number = random.randint(100000, 999999)
+    email = f"artemkoval44_{random_number}@yandex.ru"
 
     return {
         "name": "Artem",
-        "email": f"artemkoval44_{random_number}@yandex.ru",
+        "email": email,
         "password": "123456"
     }
